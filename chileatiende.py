@@ -1,3 +1,6 @@
+from urllib2 import httplib
+
+
 class ChileAtiendeClient:
 	def __init__(self, token):
-		pass
+		self.connection = httplib.HTTPSConnection('www.chileatiende.cl:443')
